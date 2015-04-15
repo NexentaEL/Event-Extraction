@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ru.kpru.itis.cll</groupId>
+    <artifactId>event-extraction</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>Event Extractor</name>
+
+    <properties>
+        <ruta-core.version>2.2.1</ruta-core.version>
+        <uimafit-core.version>2.1.0</uimafit-core.version>
+        <postgresql.version>9.3-1101-jdbc41</postgresql.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- Apache UIMA Ruta -->
+        <dependency>
+            <groupId>org.apache.uima</groupId>
+            <artifactId>ruta-core</artifactId>
+            <version>${ruta-core.version}</version>
+        </dependency>
+
+        <!-- Apache uimaFIT -->
+        <dependency>
+            <groupId>org.apache.uima</groupId>
+            <artifactId>uimafit-core</artifactId>
+            <version>${uimafit-core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
