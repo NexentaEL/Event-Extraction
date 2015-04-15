@@ -13,5 +13,4 @@ Document {-> MARKFAST(Announcement, announcementTrigger)};
 Document {-> MARKFAST(Company, company)};
 
 //Company EventType {-> MARK(Event, 1, 2)};
-// в пределах предложения? в смысле между точками? или запятыми?
 Company EventType {-> CREATE(Event, 1, 2, "participant" = Company, "type" = EventType)};
